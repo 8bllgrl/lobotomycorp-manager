@@ -10,17 +10,16 @@
           class="tab-link tab3">Other Details</li>
       </ul>
     </div>
-  
-    <div class="tab-content">
-      <div *ngIf="activeTab == 'Personal Details'" class="w-100">
-        Personal Details
-      </div>
-      <div *ngIf="activeTab == 'Account Details'" class="w-100">
-        Account Details
-      </div>
-      <div *ngIf="activeTab == 'Other Details'" class="w-100">
-        Other Details
-      </div>
+  </div>
+  <div class="tab-content">
+    <div *ngIf="activeTab == 'Personal Details'" class="w-100">
+      <app-home-tab></app-home-tab>
+    </div>
+    <div *ngIf="activeTab == 'Account Details'" class="w-100">
+      Account Details
+    </div>
+    <div *ngIf="activeTab == 'Other Details'" class="w-100">
+      Other Details
     </div>
   </div>
   

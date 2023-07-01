@@ -1,5 +1,6 @@
 .container {
-    margin-top: 0.2rem;
+    /* Add background color for the gray bar */
+    background-color: #1f1f1f;
   }
   
   .tabs-container {
@@ -17,7 +18,7 @@
   }
   
   .tab-link {
-    color: #ffffff;
+    color: #999999;
 
     flex: 1;
     padding: 10px;
@@ -26,7 +27,7 @@
     cursor: pointer;
   
     &.active {
-      color: #000000;
+      color: #ffffff;
       border-bottom-color: #18a790;
   
       &.tab1 {
@@ -56,6 +57,6 @@
   }
   
   .tab-content {
-    margin-top: 1rem;
+    // margin-top: 1rem;
   }
-  
+ 
