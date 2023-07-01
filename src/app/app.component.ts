@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Bytes';
   activeTab: string = 'Home Tab';
+  // activeTab: string = 'Abnormalities';
   tabNames: string[] = ['Home Tab', 'Abnormalities', 'Other Details'];
 
   onTabClick(tab: string){

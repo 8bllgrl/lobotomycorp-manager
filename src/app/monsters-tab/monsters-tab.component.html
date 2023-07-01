@@ -1,0 +1,6 @@
+<div class="monster-tab-container">
+    <div class="monsters-grid">
+        <app-monster-box *ngFor="let monster of monsterElements" [checked]="monster.checked"
+            class="monster-item"></app-monster-box>
+    </div>
+</div>

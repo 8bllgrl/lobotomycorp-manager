@@ -1,0 +1,12 @@
+<div class="card">
+  <img [src]="employee?.picture" alt="Employee Picture">
+  <div class="card-content">
+    <h3>{{ employee?.name }}</h3>
+    <div *ngFor="let stat of statsKeys; let i = index">
+      <div class="progress-container">
+        <!-- <span class="progress-value">{{ employee.stats[stat] }}</span> -->
+        <progress class="custom-progress-bar" [style]="getProgressBarStyle(i)" [value]="employee.stats[stat]" max="100"></progress>
+      </div>
+    </div>
+  </div>
+</div>

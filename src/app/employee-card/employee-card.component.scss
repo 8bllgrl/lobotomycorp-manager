@@ -1,0 +1,53 @@
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .card-content {
+    flex: 1;
+  }
+
+  .custom-progress-bar {
+    appearance: none;
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #ffffff; /* Default background color */
+    border: 2px solid #000000; /* Add a 2px border */
+
+    &::-webkit-progress-bar {
+      background-color: #000000; /* Background color for the whole bar */
+      border-radius: 20px;
+    }
+
+    &::-webkit-progress-value {
+      background-color: #294129; /* Color for the sliding part of the bar */
+      border-radius: 10px;
+    }
+
+    &::-moz-progress-bar {
+      background-color: var(--progress-color);
+      border-radius: 10px;
+    }
+  }
+
+  .progress-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .progress-value {
+    margin-left: 10px;
+  }
+}

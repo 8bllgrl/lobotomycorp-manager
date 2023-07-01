@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FakeEmployeeData } from '../employee-card/FakeEmployeeData';
+
 
 @Component({
   selector: 'app-scrollable-section',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./scrollable-section.component.scss']
 })
 export class ScrollableSectionComponent {
-
+  employeeData = FakeEmployeeData.employees;
 }

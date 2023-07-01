@@ -2,12 +2,12 @@
   <div class="container mt-4">
     <div class="tabs-container">
       <ul class="tab-list">
-        <li (click)="onTabClick('Home Tab')" [class.active]="activeTab == 'Home Tab'"
-          class="tab-link tab1">{{ tabNames[0] }}</li>
-        <li (click)="onTabClick('Abnormalities')" [class.active]="activeTab == 'Abnormalities'"
-          class="tab-link tab2">{{ tabNames[1] }}</li>
-        <li (click)="onTabClick('Other Details')" [class.active]="activeTab == 'Other Details'"
-          class="tab-link tab3">{{ tabNames[2] }}</li>
+        <li (click)="onTabClick('Home Tab')" [class.active]="activeTab == 'Home Tab'" class="tab-link tab1">{{
+          tabNames[0] }}</li>
+        <li (click)="onTabClick('Abnormalities')" [class.active]="activeTab == 'Abnormalities'" class="tab-link tab2">{{
+          tabNames[1] }}</li>
+        <li (click)="onTabClick('Other Details')" [class.active]="activeTab == 'Other Details'" class="tab-link tab3">{{
+          tabNames[2] }}</li>
       </ul>
     </div>
   </div>
@@ -16,7 +16,7 @@
       <app-home-tab></app-home-tab>
     </div>
     <div *ngIf="activeTab == 'Abnormalities'" class="w-100">
-      Abnormalities
+      <app-monsters-tab></app-monsters-tab>
     </div>
     <div *ngIf="activeTab == 'Other Details'" class="w-100">
       Other Details

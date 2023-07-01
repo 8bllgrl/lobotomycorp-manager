@@ -1,47 +1,14 @@
 <div class="scrollable-section">
+  <!-- Content goes here -->
+  <div class="scrollable-section">
+    <div class="sticky-header">
+      <h2>Employee Cards</h2>
+    </div>
+  
     <!-- Content goes here -->
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Tincidunt augue interdum velit euismod in. Id ornare arcu odio ut sem nulla pharetra diam sit. Aliquet
-    sagittis id consectetur purus ut. Augue eget arcu dictum varius duis. Feugiat nisl pretium fusce id velit. Tortor
-    consequat id porta nibh. Leo integer malesuada nunc vel risus commodo viverra maecenas accumsan. Bibendum at varius
-    vel pharetra vel turpis nunc eget. Leo integer malesuada nunc vel risus commodo viverra maecenas. Sed sed risus
-    pretium quam. Felis eget velit aliquet sagittis id. Diam vel quam elementum pulvinar. Placerat vestibulum lectus
-    mauris ultrices eros in. Volutpat commodo sed egestas egestas fringilla phasellus.
-
-    Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Tincidunt dui ut ornare lectus sit amet est
-    placerat. Quis blandit turpis cursus in hac habitasse platea dictumst. Scelerisque mauris pellentesque pulvinar
-    pellentesque habitant morbi tristique. Aliquet enim tortor at auctor urna nunc id cursus. Et leo duis ut diam quam.
-    Volutpat diam ut venenatis tellus in metus. Urna neque viverra justo nec ultrices dui. Pellentesque nec nam aliquam
-    sem. Risus viverra adipiscing at in tellus integer feugiat. Mi proin sed libero enim sed faucibus turpis in eu.
-    Adipiscing tristique risus nec feugiat in fermentum posuere urna. Augue ut lectus arcu bibendum at varius vel
-    pharetra vel. Justo laoreet sit amet cursus sit. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae.
-    Quisque non tellus orci ac auctor. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis.
-
-    Et netus et malesuada fames ac. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Cursus eget nunc
-    scelerisque viverra mauris in. Eget velit aliquet sagittis id consectetur purus. Porta non pulvinar neque laoreet
-    suspendisse interdum consectetur. Suscipit adipiscing bibendum est ultricies integer quis auctor elit sed.
-    Suspendisse in est ante in nibh mauris. Nec feugiat nisl pretium fusce id velit ut tortor. Posuere morbi leo urna
-    molestie at elementum eu facilisis sed. Urna nunc id cursus metus aliquam eleifend mi in nulla. Amet cursus sit amet
-    dictum sit amet justo donec. Habitant morbi tristique senectus et netus et malesuada fames ac. Sem fringilla ut
-    morbi tincidunt.
-
-    Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Sed blandit libero volutpat sed cras
-    ornare. Semper risus in hendrerit gravida. Ut consequat semper viverra nam libero justo. Viverra orci sagittis eu
-    volutpat odio facilisis. Cras ornare arcu dui vivamus arcu felis bibendum. Eget felis eget nunc lobortis. Potenti
-    nullam ac tortor vitae. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Non quam lacus
-    suspendisse faucibus interdum posuere. Augue eget arcu dictum varius duis. Venenatis tellus in metus vulputate eu.
-    Dolor morbi non arcu risus quis. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Justo eget
-    magna fermentum iaculis eu non diam phasellus vestibulum. Vestibulum lectus mauris ultrices eros in cursus turpis
-    massa. Quisque sagittis purus sit amet volutpat consequat mauris.
-
-    Quam quisque id diam vel quam elementum. Elementum sagittis vitae et leo duis ut diam quam. Sed enim ut sem viverra.
-    Tortor consequat id porta nibh. Enim sit amet venenatis urna. Adipiscing commodo elit at imperdiet dui accumsan sit
-    amet nulla. In hendrerit gravida rutrum quisque. Vel facilisis volutpat est velit egestas dui. Nulla pellentesque
-    dignissim enim sit amet venenatis urna cursus eget. Consectetur purus ut faucibus pulvinar elementum integer enim
-    neque. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Ullamcorper morbi tincidunt ornare massa eget
-    egestas purus viverra accumsan. Enim eu turpis egestas pretium. Erat nam at lectus urna duis. Morbi enim nunc
-    faucibus a pellentesque. Eros in cursus turpis massa tincidunt dui. Nunc lobortis mattis aliquam faucibus purus in
-    massa tempor. Id faucibus nisl tincidunt eget nullam non nisi est sit.
-    
+    <div>
+      <app-employee-card *ngFor="let employee of employeeData" [employee]="employee"></app-employee-card>
+    </div>
+  </div>
+  
 </div>
