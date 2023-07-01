@@ -1,0 +1,61 @@
+.container {
+    margin-top: 0.2rem;
+  }
+  
+  .tabs-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .tab-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .tab-link {
+    color: #ffffff;
+
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+  
+    &.active {
+      color: #000000;
+      border-bottom-color: #18a790;
+  
+      &.tab1 {
+        background-color: #ff5722;
+      }
+  
+      &.tab2 {
+        background-color: #e91e63;
+      }
+  
+      &.tab3 {
+        background-color: #3f51b5;
+      }
+    }
+  
+    &.tab1 {
+      background-color: #472010;
+    }
+  
+    &.tab2 {
+      background-color: #61162f;
+    }
+  
+    &.tab3 {
+      background-color: #172157;
+    }
+  }
+  
+  .tab-content {
+    margin-top: 1rem;
+  }
+  
