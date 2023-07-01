@@ -2,26 +2,24 @@
   <div class="container mt-4">
     <div class="tabs-container">
       <ul class="tab-list">
-        <li (click)="onTabClick('Personal Details')" [class.active]="activeTab == 'Personal Details'"
-          class="tab-link tab1">Personal Details</li>
-        <li (click)="onTabClick('Account Details')" [class.active]="activeTab == 'Account Details'"
-          class="tab-link tab2">Account Details</li>
+        <li (click)="onTabClick('Home Tab')" [class.active]="activeTab == 'Home Tab'"
+          class="tab-link tab1">{{ tabNames[0] }}</li>
+        <li (click)="onTabClick('Abnormalities')" [class.active]="activeTab == 'Abnormalities'"
+          class="tab-link tab2">{{ tabNames[1] }}</li>
         <li (click)="onTabClick('Other Details')" [class.active]="activeTab == 'Other Details'"
-          class="tab-link tab3">Other Details</li>
+          class="tab-link tab3">{{ tabNames[2] }}</li>
       </ul>
     </div>
   </div>
   <div class="tab-content">
-    <div *ngIf="activeTab == 'Personal Details'" class="w-100">
+    <div *ngIf="activeTab == 'Home Tab'" class="w-100">
       <app-home-tab></app-home-tab>
     </div>
-    <div *ngIf="activeTab == 'Account Details'" class="w-100">
-      Account Details
+    <div *ngIf="activeTab == 'Abnormalities'" class="w-100">
+      Abnormalities
     </div>
     <div *ngIf="activeTab == 'Other Details'" class="w-100">
       Other Details
     </div>
   </div>
-  
-
 </router-outlet>

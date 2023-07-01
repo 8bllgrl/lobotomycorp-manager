@@ -7,8 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Bytes';
-  activeTab:string = 'Personal Details';
-   onTabClick(tab: string){
-     this.activeTab = tab;
-   }
+  activeTab: string = 'Home Tab';
+  tabNames: string[] = ['Home Tab', 'Abnormalities', 'Other Details'];
+
+  onTabClick(tab: string){
+    this.activeTab = tab;
+  }
 }
