@@ -1,6 +1,7 @@
 <div class="monster-tab-container">
     <div class="monsters-grid">
-        <app-monster-box *ngFor="let monster of monsterElements" [checked]="monster.checked"
-            class="monster-item"></app-monster-box>
+        <app-monster-box *ngFor="let monster of monsterElements; let i = index" [monster]="monster" [index]="i"
+            (checkboxChange)="onCheckboxChange(i, $event.checked)" class="monster-item"></app-monster-box>
+
     </div>
 </div>

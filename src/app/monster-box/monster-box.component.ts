@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output, ElementRef } from '@angular/core';
+import { MonsterService } from './MonsterService';
 
 @Component({
   selector: 'app-monster-box',
@@ -6,13 +7,18 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./monster-box.component.scss']
 })
 export class MonsterBoxComponent {
+  @Input() monster: any;
+  @Input()
+  index!: number; // Add index as an input property
+  @Output() checkboxChange = new EventEmitter<{ index: number, checked: boolean }>();
   @Input() checked: boolean = false;
-  @Output() checkboxChange = new EventEmitter<boolean>();
 
-  imageUrl: string = "https://static.vecteezy.com/system/resources/previews/009/102/039/original/attention-sign-or-warning-caution-exclamation-sign-danger-yellow-triangle-stock-illustration-free-vector.jpg";
+  constructor(private elementRef: ElementRef, private monsterService: MonsterService) { }
 
-  onCheckboxChange(): void {
-    // Emit checkbox change event
-    this.checkboxChange.emit(this.checked);
+  onCheckboxChange(event: any): void {
+    const checked = event.target.checked;
+    this.checked = checked;
+    this.checkboxChange.emit({ index: this.index, checked: checked }); // Emit index and checked value
+    console.log(`(Monster Box) Checkbox change detected on index: ${this.index}`);
   }
 }

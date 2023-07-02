@@ -1,4 +1,14 @@
+<!-- <div class="square-box"> -->
+<!-- <img [src]="imageUrl" alt="Square Image"> -->
+<!-- <img [src]="monster.picture" alt="Monster Picture" /> -->
+<!-- <input type="checkbox" [(ngModel)]="checked" > -->
+<!-- </div> -->
+
+<!-- <img [src]="monster.picture" alt="Monster Picture" />
+  <h3>{{ monster.name }}</h3> -->
+
 <div class="square-box">
-  <img [src]="imageUrl" alt="Square Image">
-    <input type="checkbox" [(ngModel)]="checked" (change)="onCheckboxChange()">
+  <img [src]="monster.picture" alt="Monster Picture">
+  <input type="checkbox" [(ngModel)]="checked" (change)="onCheckboxChange($event)">
 </div>
+<h3 class="name">{{ monster.name }}</h3>
