@@ -12,6 +12,8 @@ import { HomepageJobSectionComponent } from './homepage-job-section/homepage-job
 import { MonstersTabComponent } from './monsters-tab/monsters-tab.component';
 import { EmployeeStatsTabComponent } from './employee-stats-tab/employee-stats-tab.component';
 import { JobComponentComponent } from './job-component/job-component.component';
+import { BasicJobTodoComponent } from './basic-job-todo/basic-job-todo.component';
+import { BasicTabComponent } from './basic-tab/basic-tab.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { JobComponentComponent } from './job-component/job-component.component';
     HomepageJobSectionComponent,
     MonstersTabComponent,
     EmployeeStatsTabComponent,
-    JobComponentComponent
+    JobComponentComponent,
+    BasicJobTodoComponent,
+    BasicTabComponent
   ],
   imports: [
     BrowserModule,

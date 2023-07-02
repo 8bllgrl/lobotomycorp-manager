@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import monsters from '../monster-box/FakeMonsterData'; // Import the monsters array
 import { CheckedMonstersService } from '../monster-box/CheckedMonstersService';
+import monsters from '../monster-box/FakeMonsterData';
 
 @Component({
   selector: 'app-monsters-tab',
@@ -13,11 +13,10 @@ export class MonstersTabComponent implements OnInit {
   constructor(public checkedMonstersService: CheckedMonstersService) {}
 
   ngOnInit() {
-    // Use the imported monsters array
     for (let i = 0; i < monsters.length; i++) {
       const monsterBox = {
-        checked: this.checkedMonstersService.checkedMonsters.includes(i),
-        ...monsters[i] // Spread the properties from the monsters array
+        ...monsters[i],
+        checked: this.checkedMonstersService.checkedMonsters.includes(i)
       };
       this.monsterElements.push(monsterBox);
     }
@@ -27,10 +26,8 @@ export class MonstersTabComponent implements OnInit {
     this.monsterElements[index].checked = checked;
 
     if (checked) {
-      // Add the monster to the checkedMonsters array
       this.checkedMonstersService.checkedMonsters.push(index);
     } else {
-      // Remove the monster from the checkedMonsters array
       const indexToRemove = this.checkedMonstersService.checkedMonsters.indexOf(index);
       if (indexToRemove !== -1) {
         this.checkedMonstersService.checkedMonsters.splice(indexToRemove, 1);

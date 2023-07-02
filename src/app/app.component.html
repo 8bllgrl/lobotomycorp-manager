@@ -8,6 +8,8 @@
           tabNames[1] }}</li>
         <li (click)="onTabClick('Other Details')" [class.active]="activeTab == 'Other Details'" class="tab-link tab3">{{
           tabNames[2] }}</li>
+          <li (click)="onTabClick('Basic')" [class.active]="activeTab == 'Basic'" class="tab-link tab4">{{
+            tabNames[3] }}</li>
       </ul>
     </div>
   </div>
@@ -20,6 +22,9 @@
     </div>
     <div *ngIf="activeTab == 'Other Details'" class="w-100">
       Other Details
+    </div>
+    <div *ngIf="activeTab == 'Basic'" class="w-100">
+      <app-basic-tab></app-basic-tab>
     </div>
   </div>
 </router-outlet>

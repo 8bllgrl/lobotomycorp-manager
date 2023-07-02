@@ -1,0 +1,11 @@
+<div class="rectangle">
+    <img [src]="imageUrl" alt="Image">
+    <ul class="colors">
+      <li><input type="checkbox" id="redCheckbox" [(ngModel)]="checkboxValues.red"><label for="redCheckbox">R</label></li>
+      <li><input type="checkbox" id="whiteCheckbox" [(ngModel)]="checkboxValues.white"><label for="whiteCheckbox">W</label></li>
+      <li><input type="checkbox" id="blueCheckbox" [(ngModel)]="checkboxValues.blue"><label for="blueCheckbox">B</label></li>
+      <li><input type="checkbox" id="yellowCheckbox" [(ngModel)]="checkboxValues.yellow"><label for="yellowCheckbox">Y</label></li>
+    </ul>
+    <input type="text" [(ngModel)]="textBoxValue" placeholder="Edit me">
+  </div>
+  

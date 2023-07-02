@@ -1,0 +1,24 @@
+.rectangle {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 25vw;
+  }
+  
+  .colors {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .colors li {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-left: 10px;
+  }
+  
