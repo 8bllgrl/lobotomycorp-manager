@@ -1,7 +1,7 @@
 <div class="scrollable-section">
   <div class="scrollable-section">
     <div>
-      <app-monster-box *ngFor="let monster of checkedMonsters"
+      <app-monster-box *ngFor="let monster of checkedMonstersService.checkedMonsters"
                        [checked]="true"
                        (checkboxChange)="handleCheckboxChange($event)">
       </app-monster-box>
